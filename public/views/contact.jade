@@ -1,0 +1,28 @@
+div.col-md-12
+    div.row
+        div.col-md-6.col-md-offset-3
+            div.page-header
+                h1 Contact
+            form#emailForm.col-md-6(ng-submit="sendEmail()")
+                .form-group
+                    label(for='name') Name
+                    input#name.form-control(ng-model="name", type='text', name='name', placeholder='Name')
+                .form-group
+                    label(for='email') Email
+                    input#email.form-control(ng-model="email", type='email', name='email', placeholder='Email')
+                .form-group
+                    label(for='message') Message
+                    textarea#message.form-control(ng-model="message", name='message', placeholder='Message', size='250')
+                button.btn.btn-default(type='submit') Submit
+                button.btn.btn-default(type='reset') Reset
+            div.col-md-6
+                .form-group.text-right
+                    h2(for='myLinkedIn') LinkedIn
+                    a(href="https://www.linkedin.com/pub/taylor-boyd/94/630/8b8", target='_blank')
+                        h4#myLinkedIn Taylor Boyd's LinkedIn
+                .form-group.text-right
+                    h2(for='myEmail') Email
+                    h4#myEmail developertboyd@gmail.com
+                .form-group.text-right
+                    h2(for='myPhone') Phone
+                    h4#myPhone 435-241-8247

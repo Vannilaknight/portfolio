@@ -1,0 +1,31 @@
+extends ../includes/layout
+block main-content
+    div(ng-controller="mainCtrl").col-md-12
+        div.row
+            div.col-md-3.col-md-offset-3
+                a(href='/')
+                    img.me(height="300px", width="300px", src="assets/header.png")
+            div.col-md-4
+                div.my-title
+                    h1.name-title Taylor Boyd // Web Developer
+                    h3.skills Angular.js ~ Node.js ~ HTML5
+                    div.social-links
+                        a(href="https://github.com/Vannilaknight", target='_blank')
+                            i.fa.fa-github.fa-3x
+                        a(href="https://www.linkedin.com/pub/taylor-boyd/94/630/8b8", target='_blank')
+                            i.fa.fa-linkedin-square.fa-3x
+        div.row
+            div.col-md-3.col-md-offset-5
+                ul.nav.navbar-nav
+                    li.nav-link
+                        a(href='/contact' ng-class="getClass('/contact')") Contact
+                    li.nav-link
+                        span ~
+                    li.nav-link
+                        a(href='/projects' ng-class="getClass('/projects')") Projects
+                    li.nav-link
+                        span ~
+                    li.nav-link
+                        a(href='/skills' ng-class="getClass('/skills')") Skills
+        div.row
+            div.page-view(ng-view)

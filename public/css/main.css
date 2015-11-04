@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../assets/fonts/Comfortaa.ttf');
+}
+
+@font-face {
+    font-family: 'AlegreyaSans';
+    src: url('../assets/fonts/AlegreyaSans.ttf');
+}
+
+html,body {
+    font-family: "AlegreyaSans";
+    background: radial-gradient(circle closest-side at 50% 50%, rgba(125, 69, 161, 0.11), #ededed);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+
+.nav-link {
+    font-size: 36px;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    color: #000;
+    background: none;
+}
+
+.nav > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav > li > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav > li > a.active:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.my-title {
+    margin-top: 100px;
+    margin-left: -300px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.name-title {
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+.me{
+    position: relative;
+    z-index: 10;
+}
+
+.resume-holder{
+
+}
+
+#myResume{
+    width: 85%;
+    height: 1040px;
+    margin-bottom: 100px;
+}
