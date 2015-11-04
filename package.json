@@ -1,14 +1,14 @@
 {
-  "name": "personalportfolio",
+  "name": "personalpage",
   "version": "1.0.0",
-  "description": "Taylors personal portfolio",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "angri": "^1.0.3",
     "body-parser": "^1.14.1",
     "cookie-parser": "^1.4.0",
-    "express": "^4.13.3",
     "express-session": "^1.12.1",
+    "express": "^4.13.3",
     "jade": "^1.11.0",
     "mongoose": "^4.2.3",
     "nodemailer": "^1.8.0",
@@ -21,12 +21,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vannilaknight/portfolio.git"
+    "url": "git+https://Vannilaknight:sonic365@bitbucket.org/Vannilaknight/personsite.git"
   },
-  "author": "Taylor Boyd",
+  "author": "Taylor BOyd",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Vannilaknight/portfolio/issues"
-  },
-  "homepage": "https://github.com/Vannilaknight/portfolio#readme"
+  "homepage": "https://bitbucket.org/Vannilaknight/personsite#readme"
 }
