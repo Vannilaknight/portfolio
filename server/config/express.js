@@ -15,5 +15,5 @@ module.exports = function(app, config) {
         resave: true,
         saveUninitialized: true
     }));
-    app.use(express.static(config.rootPath + '/public'));
+    app.use(express.static(config.development.rootPath + '/public'));
 };
