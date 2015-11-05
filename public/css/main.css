@@ -8,19 +8,29 @@
     src: url('../assets/fonts/AlegreyaSans.ttf');
 }
 
-html,body {
+html, body {
     font-family: "AlegreyaSans";
     background: radial-gradient(circle closest-side at 50% 50%, rgba(125, 69, 161, 0.11), #ededed);
     height: 100vh;
     overflow-x: hidden;
 }
 
-body{
+body {
     overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+
+.showcase {
+    font-family: "AlegreyaSans";
+    font-size: 48px;
+    color: #532e6b;
+}
+
+.showcase-item{
+    margin-bottom: 50px;
 }
 
 .nav-link {
@@ -54,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scaleX(1);
 }
 
-.nav > li > a.active:before{
+.nav > li > a.active:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -83,17 +93,26 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.me{
+.me {
     position: relative;
     z-index: 10;
 }
 
-.resume-holder{
+.resume-holder {
 
 }
 
-#myResume{
+#myResume {
     width: 85%;
     height: 1040px;
     margin-bottom: 100px;
+}
+
+.outline {
+    border: 1px solid red;
+}
+
+.right-list{
+    text-align: right;
+    list-style: inside;
 }

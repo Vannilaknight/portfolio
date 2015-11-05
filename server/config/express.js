@@ -1,7 +1,8 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
     cookieParser = require('cookie-parser'),
-    session = require('express-session');
+    session = require('express-session'),
+    logger = require('angri');
 
 module.exports = function(app, config) {
     app.set('views', 'server/views');
@@ -16,4 +17,5 @@ module.exports = function(app, config) {
         saveUninitialized: true
     }));
     app.use(express.static(config.rootPath + '/public'));
+    logger.server('Middleware started');
 };
