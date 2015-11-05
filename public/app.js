@@ -14,9 +14,9 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
 
     $locationProvider.html5Mode(true);
     $routeProvider
-        .when('/projects', {
-            templateUrl: 'partials/views/projects',
-            controller: 'projectsCtrl'
+        .when('/about', {
+            templateUrl: 'partials/views/about',
+            controller: 'aboutCtrl'
         })
         .when('/skills', {
             templateUrl: 'partials/views/skills',
