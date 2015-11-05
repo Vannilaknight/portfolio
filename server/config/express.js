@@ -17,5 +17,4 @@ module.exports = function(app, config) {
         saveUninitialized: true
     }));
     app.use(express.static(config.rootPath + '/public'));
-    logger.server('Middleware started');
 };
