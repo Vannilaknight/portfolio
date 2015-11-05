@@ -29,11 +29,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #532e6b;
 }
 
-.desc{
+.desc {
     font-family: "AlegreyaSans";
 }
 
-.showcase-item{
+.showcase-item {
     margin-bottom: 50px;
 }
 
@@ -116,7 +116,11 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid red;
 }
 
-.right-list{
-    text-align: right;
-    list-style: inside;
+.skill-img {
+    margin-left: 10px;
+}
+
+.no-list {
+    text-align: center;
+    list-style: none;
 }
