@@ -10,7 +10,7 @@
 
 html, body {
     font-family: "AlegreyaSans";
-    background: radial-gradient(circle closest-side at 50% 50%, rgba(125, 69, 161, 0.11), #ededed);
+    background: url('../assets/crossword.png');
     height: 100vh;
     overflow-x: hidden;
 }
